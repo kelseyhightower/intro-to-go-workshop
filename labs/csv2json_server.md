@@ -10,7 +10,7 @@ HTTP API to convert CSV to JSON
 
     ${GOPATH}/src/github.com/${username}/csv2json-server/main.go
 
-#### Code
+-
 
 	package main
 
@@ -54,7 +54,7 @@ HTTP API to convert CSV to JSON
 
 ### Make the listen port configurable via the environment
 
-Hint:
+#### Hint
 
     import (
         "os"
@@ -67,7 +67,7 @@ Hint:
 
 ### Improve logging
 
-Hint:
+#### Hint
 
     import (
         "log"
