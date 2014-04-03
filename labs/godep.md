@@ -43,6 +43,6 @@
 
 ## Updating Dependencies
 
-   godep restore
-   go get -u csv2json
-   godep save
+    godep restore
+    go get -u csv2json
+    godep save
