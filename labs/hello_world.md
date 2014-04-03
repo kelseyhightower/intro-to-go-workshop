@@ -23,7 +23,7 @@
 
 ### Build
 
-    cd ${GOPATH}/src/github.com/kelseyhightower/hello
+    cd ${GOPATH}/src/github.com/${username}/hello
     go build main.go -o hello
 
 ### Run
