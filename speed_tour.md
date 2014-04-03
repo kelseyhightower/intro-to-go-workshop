@@ -28,18 +28,8 @@
 
 ### Arrays
 
-* type definition specifies a length and an element type
-* size is fixed. Length is part of the type.
-* an array variable denotes the entire array. When ever you pass it around, you copy it.
-* To save on the copy you can pass a pointer to the array.
-* like a struct but indexed vs named fields. It's a fixe-sized composite value
-* Foundation for other types
-* Hardly ever used
-* 0 indexed
-* Accessing the Array past the index will crash your program
-* Most common use case is to hold storage for a slice
+Represents an array of four integers
 
-    // represents an array of four integers
     [4]int 
 
     var buffer [256]byte
@@ -47,47 +37,29 @@
     buffer[1]
     len(buffer)  // 256
 
-    // Creating an array.
-	b := [2]string{"Penn", "Teller"}
+Creating an array.
+	
+    b := [2]string{"Penn", "Teller"}
 
 	// Let the compiler count the elements
 	b := [...]string{"Penn", "Teller"} 
 
-	// The type of b is [2]string
-
 
 ### Slices
 
-* A slice is backed by an array
-* No specified length
-* declared just like an array literal, execpt you leave out the element count
-* sequence of typed data
-* abstration built on top of Go's array
-* Grow a slice using the built-in append() function
-* Uninitialized slice == nil
-* Initialize using built-in make()
-* type, length, and capacity
-* len(), cap()
-* default value is 0. len() and cap() return 0 for a nil slice
+Creating a slice:
 
     var slice []byte = buffer[100:150]
     slice := buffer[100:150]
 
-The slice data structure.
-
-* slice header
-
-    []string
-    []byte
-
-    var names []string
-
-	names = make([]string, length, capacity)
+	names = make([]string, 0, 100)
 	names := []string{
 		"Rob",
 		"Robert",
 		"Ken",
 	} 
+
+Interation:
 
 	for i, name := range names {
 		fmt.Printf("Name: %s Index: %d", name, i) 
@@ -103,7 +75,7 @@ The slice data structure.
 	}
 
 
-### Methods
+#### Methods
 
 	func (p *Person) ChangeJobTitle(title string) error {
 		p.jobTitle = title
