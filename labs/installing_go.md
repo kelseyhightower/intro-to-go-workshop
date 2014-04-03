@@ -1,11 +1,11 @@
 # Installing Go
 
-## Install a Go binary distribution
+## Install a binary distribution
  
     wget https://go.googlecode.com/files/go1.2.linux-amd64.tar.gz
     tar -xvf go1.2.linux-amd64.tar.gz -C /usr/local
 
-## Setup the Go workspace
+## Setup the workspace
 
     ${HOME}/.bashrc
 
@@ -32,9 +32,11 @@ Add:
 
 ## Check the Go environment
 
+### Run
+
     go env
 
-
+Output:
 
 	GOARCH="amd64"
 	GOBIN=""
