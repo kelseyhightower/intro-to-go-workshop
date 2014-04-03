@@ -41,7 +41,7 @@ Multiple imports
 
     package main
 
-### Variables
+## Variables
 
 	var name string
 
@@ -56,7 +56,7 @@ Multiple imports
 	  var age = 32
 	}
 
-### Arrays
+## Arrays
 
 Represents an array of four integers
 
@@ -75,7 +75,7 @@ Creating an array.
 	b := [...]string{"Penn", "Teller"} 
 
 
-### Slices
+## Slices
 
 Creating a slice:
 
@@ -95,8 +95,7 @@ Interation:
 		fmt.Printf("Name: %s Index: %d", name, i) 
 	}
 
-### Structs
-
+## Structs
 
 	type Person struct {
 		Name string
@@ -105,14 +104,14 @@ Interation:
 	}
 
 
-#### Methods
+### Methods
 
 	func (p *Person) ChangeJobTitle(title string) error {
 		p.jobTitle = title
 	}
 
 
-### Maps
+## Maps
 
 	map[string]string
 	map[string]interface{}
