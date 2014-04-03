@@ -1,9 +1,8 @@
-
-## CLI tool to convert CSV to JSON - csv2json-cli
+# CLI tool to convert CSV to JSON - csv2json-cli
 
 Convert CSV files into JSON.
 
-### Write the code
+## Code
 
 Create `~/go/src/github.com/username/csv2json-cli`
 
@@ -58,13 +57,13 @@ Chief Running Board, 1968, Go Go Gophers
 Ruffled Feathers, 1968, Go Go Gophers
 ```
 
-Build
+### Build
 
 ```
 go build main.go
 ```
 
-Run
+### Run
 
 ```
 ./csv2json-cli -infile famous-gophers.csv
@@ -91,84 +90,14 @@ import "error"
 
 Exercise: Add comments
 
+```
 //
 
 /* */
-
+```
 
 ### Exercise: Generate Go docs
 
-    godoc -http=":8080"
-
-## HTTP API to convert CSV to JSON - csv2json-http
-
-### Write the code
-
-Create ~/go/src/github.com/username/csv2json-http
-
-Edit ~/go/src/github.com/username/csv2json-http/main.go
-
-
 ```
-package main
-
-import (
-	"log"
-	"net/http"
-
-	"github.com/kelseyhightower/csv2json"
-)
-
-var (
-	columns = []string{"Name", "Date", "Title"}
-)
-
-func csv2JsonServer(w http.ResponseWriter, req *http.Request) {
-	jsonData, err := csv2json.Convert(req.Body, columns)
-	defer req.Body.Close()
-	if err != nil {
-		http.Error(w, "Could not convert csv to json", 503)
-	}
-	print(string(jsonData))
-	w.Write(jsonData)
-}
-
-func main() {
-	http.HandleFunc("/csv2json", csv2JsonServer)
-	err := http.ListenAndServe(":8080", nil)
-	if err != nil {
-		log.Fatal("ListenAndServe: ", err)
-	}
-}
-```
-
-
-Build
-
-```
-go build main.go
-```
-
-
-Run
-
-```
-./csv2json-http
-```
-
-### Exercise: Make the listen port configurable via the environment
-
-Hint
-
-```
-import "os"
-os.Getenv("PORT")
-```
-
-### Exercise: Add more logging
-
-Hint
-
-```
-import "log"
+godoc -http=":8080"
 ```
