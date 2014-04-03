@@ -11,14 +11,16 @@
 
 ### GOPATH
 
+#### Edit
+
     ${HOME}/.bashrc
 
-Add:
+#### Code
 
     export GOPATH="${HOME}/go"
     export PATH="/usr/local/go/bin:${GOPATH}/bin:$PATH"
 
-Load the environment:
+#### Activate:
 
     source ${HOME}/.bashrc
 
