@@ -9,7 +9,7 @@
 
 ## Setup the Workspace
 
-### Set GOPATH
+### GOPATH
 
     ${HOME}/.bashrc
 
@@ -22,7 +22,7 @@ Add:
 
     source ${HOME}/.bashrc
 
-### Create The Go workspace directories
+### Workspace Directories
 
 - ${GOPATH}/bin
 - ${GOPATH}/pkg
