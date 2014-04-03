@@ -2,7 +2,7 @@
 
 #### Create
 
-    mkdir -p ${GOPATH}/src/github.com/${username}/hello
+    ${GOPATH}/src/github.com/${username}/hello
 
 #### Edit
 
@@ -22,7 +22,6 @@
 
 #### Build
 
-    cd ${GOPATH}/src/github.com/${username}/hello
     go build -o hello main.go
 
 #### Run
