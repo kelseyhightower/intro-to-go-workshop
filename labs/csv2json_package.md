@@ -51,4 +51,3 @@ Package to convert CSV to JSON
     cd ${GOPATH}/src/github.com/${username}/csv2json
     go build csv2json.go
 
-

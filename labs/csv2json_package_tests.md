@@ -58,7 +58,7 @@
 
 ### Run
 
-   go test
+    go test
 
 
 Run with the -v flag for verbose output:
