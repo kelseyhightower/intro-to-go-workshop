@@ -13,6 +13,19 @@
 
     godep save
 
+### Inspect Godeps/Godeps.json 
+
+	{
+		"ImportPath": "github.com/kelseyhightower/csv2json-cli",
+		"GoVersion": "go1.2",
+		"Deps": [
+			{
+				"ImportPath": "github.com/kelseyhightower/csv2json",
+				"Rev": "0ca8ee22d850f992f466c21bb8105ef8cba2184b"
+			}
+		]
+	}
+
 ### Inspect Godep Directory
 
 	Godeps/
