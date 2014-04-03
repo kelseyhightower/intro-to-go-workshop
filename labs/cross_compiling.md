@@ -1,48 +1,31 @@
 # Cross Compiling
 
-Build the toolchain
+### Key Environment Variables
 
-```
-GOOS
-GOARCH
-CGO_ENABLED
-```
+- GOOS
+- GOARCH
+- CGO_ENABLED
 
-Run
+### Requirements
 
-```
-go env
-cd /usr/local/go/pkg
-ls
-linux_amd64
-```
-	
-Run
+- gcc
 
-```
-apt-get install gcc
-cd /usr/local/go/src
-GOOS=linux GOARCH=386 CGO_ENABLED=0 ./make.bash —no-clean
-```
+### Build the Linux Tool Chain
 
-```
-cd /usr/local/go/pkg
-ls
-linux_386 linux_amd64 
-```
+    cd /usr/local/go/src
+    GOOS=linux GOARCH=amd64 CGO_ENABLED=0 ./make.bash —no-clean
 
-```
-GOOS=darwin GOARCH=amd64 CGO_ENABLED=0 ./make.bash —no-clean
+### Build the OS X Tool Chain
 
-cd /usr/local/go/pkg
-ls
-	
-darwin_amd64 linux_386 linux_amd64
-```
+    cd /usr/local/go/src
+    GOOS=darwin GOARCH=amd64 CGO_ENABLED=0 ./make.bash —no-clean
 
-## Cross compile for Window or OS X
+### Build the Windows Tool Chain
 
-```
-cd to a project
-GOOS=darwin go build .
-```
+    cd /usr/local/go/src
+    GOOS=windows GOARCH=amd64 CGO_ENABLED=0 ./make.bash —no-clean
+
+### Cross Compile csv2json_server
+
+    cd ${GOPATH}/src/github.com/${username}/csv2json-server
+    GOOS=darwin GOARCH=amd64 go build -o csv2json-server main.go
