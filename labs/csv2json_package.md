@@ -2,16 +2,16 @@
 
 Package to convert CSV to JSON
 
-### Create
+#### Create
 
     ${GOPATH}/src/github.com/${username}/csv2json
 
-### Edit
+#### Edit
 
     ${GOPATH}/src/github.com/${username}/csv2json/csv2json.go
 
 
-### Code
+#### Code
 
 	package csv2json
 
@@ -46,8 +46,7 @@ Package to convert CSV to JSON
 		return data, nil
 	}
 
-### Build
+#### Build
 
-    cd ${GOPATH}/src/github.com/${username}/csv2json
     go build csv2json.go
 
