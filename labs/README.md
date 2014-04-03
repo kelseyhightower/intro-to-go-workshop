@@ -5,6 +5,6 @@
 - [Package to convert CSV to JSON](csv2json_package.md)
 - [Testing the csv2json package](csv2json_package_tests.md)
 - [CLI tool to convert CSV to JSON](csv2json_cli.md)
-- [Managing Dependencies with Godeps](godeps.md)
+- [Managing Dependencies with Godep](godep.md)
 - [HTTP API to convert CSV to JSON](csv2json_server.md)
 - [Cross Compiling](cross_compiling.md)
