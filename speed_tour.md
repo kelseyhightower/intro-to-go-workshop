@@ -10,6 +10,36 @@
 * Great for building web services, worker process, and command line tools
 * Single binary — no gems or dynamic libs*
 
+## Packages
+
+### Creating a package
+
+Create the package directory under GOPATH:
+
+    mkdir ${GOPATH}/src/github.com/kelseyhightower/envconfig
+    touch ${GOPATH}/src/github.com/kelseyhightower/envconfig/envconfig.go
+
+Declare a package
+
+    // envconfig.go
+    package envconfig
+
+### Using packages
+
+    import "github.com/kelseyhightower/envconfig"
+
+Multiple imports
+
+    import(
+       "fmt"
+       "log"
+
+       "github.com/kelseyhightower/envconfig"
+    )
+
+### Package main
+
+    package main
 
 ### Variables
 
