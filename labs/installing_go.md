@@ -1,11 +1,15 @@
 # Installing Go
 
-## Install a binary distribution
+## Installation
+
+### Install a binary distribution
  
     wget https://go.googlecode.com/files/go1.2.linux-amd64.tar.gz
     tar -xvf go1.2.linux-amd64.tar.gz -C /usr/local
 
-## Setup the workspace
+## Setup the Workspace
+
+### Set GOPATH
 
     ${HOME}/.bashrc
 
@@ -14,25 +18,23 @@ Add:
     export GOPATH="${HOME}/go"
     export PATH="/usr/local/go/bin:${GOPATH}/bin:$PATH"
 
-## Load the environment
+### Load the environment
 
     source ${HOME}/.bashrc
 
-## Create The Go workspace directories
+### Create The Go workspace directories
 
 - ${GOPATH}/bin
 - ${GOPATH}/pkg
 - ${GOPATH}/src/github.com/${username}
 
 
-### Create the directories on Unix
+#### Create the directories on Unix
 
     mkdir -p ${GOPATH}{src,pkg,bin}
     mkdir -p ${GOPATH}/src/github.com/${username}
 
-## Check the Go environment
-
-### Run
+### Check the Go environment
 
     go env
 
