@@ -1,73 +1,67 @@
-# HTTP API to convert CSV to JSON - csv2json-http
+# csv2json-http
 
-## Code
+HTTP API to convert CSV to JSON
 
-Create ~/go/src/github.com/username/csv2json-http
+### Create
 
-Edit ~/go/src/github.com/username/csv2json-http/main.go
+    ${GOPATH}/src/github.com/${username}/csv2json-http
 
+### Edit
 
-```
-package main
+    ${GOPATH}/src/github.com/username/csv2json-http/main.go
 
-import (
-	"log"
-	"net/http"
+### Code
 
-	"github.com/kelseyhightower/csv2json"
-)
+	package main
 
-var (
-	columns = []string{"Name", "Date", "Title"}
-)
+	import (
+		"log"
+		"net/http"
 
-func csv2JsonServer(w http.ResponseWriter, req *http.Request) {
-	jsonData, err := csv2json.Convert(req.Body, columns)
-	defer req.Body.Close()
-	if err != nil {
-		http.Error(w, "Could not convert csv to json", 503)
+		"github.com/kelseyhightower/csv2json"
+	)
+
+	var (
+		columns = []string{"Name", "Date", "Title"}
+	)
+
+	func csv2JsonServer(w http.ResponseWriter, req *http.Request) {
+		jsonData, err := csv2json.Convert(req.Body, columns)
+		defer req.Body.Close()
+		if err != nil {
+			http.Error(w, "Could not convert csv to json", 503)
+		}
+		w.Write(jsonData)
 	}
-	print(string(jsonData))
-	w.Write(jsonData)
-}
 
-func main() {
-	http.HandleFunc("/csv2json", csv2JsonServer)
-	err := http.ListenAndServe(":8080", nil)
-	if err != nil {
-		log.Fatal("ListenAndServe: ", err)
+	func main() {
+		http.HandleFunc("/csv2json", csv2JsonServer)
+		err := http.ListenAndServe(":8080", nil)
+		if err != nil {
+			log.Fatal("ListenAndServe: ", err)
+		}
 	}
-}
-```
 
-## Build
+### Build
 
-```
-go build main.go
-```
+    go build -o csv2json-server main.go
+
+### Run
+
+    ./csv2json-server
 
 
-## Run
+## Make the listen port configurable via the environment
 
-```
-./csv2json-http
-```
+### Hint
 
-## Exercises
+    import (
+        "os"
+        "net"
+    )
 
-### Make the listen port configurable via the environment
+## Improve logging
 
-Hint
+### Hint
 
-```
-import "os"
-os.Getenv("PORT")
-```
-
-### Add more logging
-
-Hint
-
-```
-import "log"
-```
+    import "log"
