@@ -1,16 +1,16 @@
-# csv2json-http
+# csv2json-server
 
 HTTP API to convert CSV to JSON
 
-### Create
+#### Create
 
-    ${GOPATH}/src/github.com/${username}/csv2json-http
+    ${GOPATH}/src/github.com/${username}/csv2json-server
 
-### Edit
+#### Edit
 
-    ${GOPATH}/src/github.com/username/csv2json-http/main.go
+    ${GOPATH}/src/github.com/${username}/csv2json-server/main.go
 
-### Code
+#### Code
 
 	package main
 
@@ -42,14 +42,13 @@ HTTP API to convert CSV to JSON
 		}
 	}
 
-### Build
+#### Build
 
     go build -o csv2json-server main.go
 
-### Run
+#### Run
 
     ./csv2json-server
-
 
 ## Exercise
 
