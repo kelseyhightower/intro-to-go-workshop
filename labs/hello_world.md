@@ -1,12 +1,10 @@
 # Hello World
 
-> Replace ${username} with your github username.
-
 ```
-mkdir ~/go/src/github.com/${username}/hello
+mkdir ${GOPATH}/src/github.com/${username}/hello
 ```
 
-**Edit** `~/go/src/github.com/${username}/hello/main.go`
+**Edit** `${GOPATH}/src/github.com/${username}/hello/main.go`
 
 ```
 package main
