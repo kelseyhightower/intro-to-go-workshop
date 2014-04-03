@@ -38,7 +38,7 @@ Load the environment:
 
     go env
 
----
+-
 
 	GOARCH="amd64"
 	GOBIN=""
