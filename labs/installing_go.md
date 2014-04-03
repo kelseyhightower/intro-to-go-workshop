@@ -24,17 +24,14 @@ Load the environment:
 
 ### Workspace Directories
 
-- ${GOPATH}/bin
-- ${GOPATH}/pkg
-- ${GOPATH}/src/github.com/${username}
-
-
 #### Create the directories on Unix
 
-    mkdir -p ${GOPATH}{src,pkg,bin}
+    mkdir -p ${GOPATH}/src
+    mkdir -p ${GOPATH}/pkg
+    mkdir -p ${GOPATH}/bin
     mkdir -p ${GOPATH}/src/github.com/${username}
 
-### Check the Go environment
+### Check the Go Environment
 
     go env
 
