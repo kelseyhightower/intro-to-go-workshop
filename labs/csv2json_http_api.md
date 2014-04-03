@@ -51,17 +51,17 @@ HTTP API to convert CSV to JSON
     ./csv2json-server
 
 
-## Make the listen port configurable via the environment
+## Exercise
 
-### Hint
+### Make the listen port configurable via the environment
 
-    import (
-        "os"
-        "net"
-    )
+Hint:
 
-## Improve logging
+    import "os"
+    import "net"
 
-### Hint
+### Improve logging
+
+Hint:
 
     import "log"
