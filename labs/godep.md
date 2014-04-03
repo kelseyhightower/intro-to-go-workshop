@@ -30,3 +30,19 @@
 ## Build Using Godep
 
     godep go build -o csv2json main.go
+
+## Test Using Godep
+
+    godep go test
+
+## Restore Dependencies
+
+    rm -rf ${GOPATH}/src/github.com/${username}/csv2json
+    godep restore
+
+
+## Updating Dependencies
+
+   godep restore
+   go get -u csv2json
+   godep save
