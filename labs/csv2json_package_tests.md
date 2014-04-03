@@ -1,10 +1,10 @@
 # Testing the csv2json package
 
-### Edit 
+#### Edit 
 
     ${GOPATH}/src/github.com/${username}/csv2json/csv2json_test.go
 
-### Code
+#### Code
 
 	package csv2json
 
@@ -56,7 +56,7 @@
 		}
 	}
 
-### Run
+#### Run
 
     go test
 
@@ -65,11 +65,13 @@ Run with the -v flag for verbose output:
 
     go test -v
 
-## Write an additional test
+## Exercise
+
+### Write an additional test
 
 Create an additional test named TestConvertWithFile.
 
-### Hint
+#### Hint
 
 	func TestConvertWithFile(t *testing.T) {
 		tf, err := ioutil.TempFile("", "")
@@ -91,4 +93,3 @@ Create an additional test named TestConvertWithFile.
 
 		// Test your results
 	}
-
