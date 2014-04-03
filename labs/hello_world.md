@@ -1,10 +1,16 @@
 # Hello World
 
+### Create
+
 ```
 mkdir ${GOPATH}/src/github.com/${username}/hello
 ```
 
-**Edit** `${GOPATH}/src/github.com/${username}/hello/main.go`
+### Edit
+
+`${GOPATH}/src/github.com/${username}/hello/main.go`
+
+### Code
 
 ```
 package main
@@ -18,13 +24,13 @@ func main() {
 }
 ```
 
-**Build**
+### Build
 
 ```
 go build main.go -o hello
 ```
 
-**Run**
+### Run
 
 ```
 ./hello
