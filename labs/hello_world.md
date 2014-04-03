@@ -6,7 +6,7 @@
 
 ### Edit
 
-    ${editor} ${GOPATH}/src/github.com/${username}/hello/main.go
+    ${GOPATH}/src/github.com/${username}/hello/main.go
 
 ### Code
 
