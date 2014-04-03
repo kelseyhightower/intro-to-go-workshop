@@ -18,7 +18,7 @@ Add:
     export GOPATH="${HOME}/go"
     export PATH="/usr/local/go/bin:${GOPATH}/bin:$PATH"
 
-### Load the environment
+Load the environment:
 
     source ${HOME}/.bashrc
 
