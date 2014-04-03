@@ -1,9 +1,6 @@
 # Hands on Exercises
 
-## Setup
 - [Installing Go](installing_go.md)
-
-## Development
 - [Hello World](hello_world.md)
 - [Package to convert CSV to JSON](csv2json_package.md)
 - [Testing](testing.md)
@@ -13,7 +10,4 @@
 - [Managing Dependencies](managing_dependencies.md)
   - [Godeps](godeps.md)
 - [HTTP API to convert CSV to JSON](csv2json_http_api.md)
-
-## Deployment
-  - [Cross Compiling](cross_compiling.md)
-  - [12 Factor](12factor.md)
+- [Cross Compiling](cross_compiling.md)
