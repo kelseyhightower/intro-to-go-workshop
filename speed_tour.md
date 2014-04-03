@@ -95,22 +95,6 @@ Interation:
 		fmt.Printf("Name: %s Index: %d", name, i) 
 	}
 
-## Structs
-
-	type Person struct {
-		Name string
-		Age  int
-		Cool bool
-	}
-
-
-### Methods
-
-	func (p *Person) ChangeJobTitle(title string) error {
-		p.jobTitle = title
-	}
-
-
 ## Maps
 
 	map[string]string
@@ -125,7 +109,7 @@ Interation:
 	make(map[string]Person)
 
 
-### Errors
+## Errors
 
 	import "errors"
 
@@ -147,3 +131,21 @@ Handling errors.
 		// Handle error
 		return err
 	}
+
+## Structs
+
+	type Person struct {
+		Name string
+		Age  int
+		Cool bool
+	}
+
+
+### Methods
+
+	func (p *Person) ChangeJobTitle(title string) error {
+		p.jobTitle = title
+	}
+
+
+
