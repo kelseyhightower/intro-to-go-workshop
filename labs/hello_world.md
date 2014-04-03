@@ -2,36 +2,29 @@
 
 ### Create
 
-```
-mkdir ${GOPATH}/src/github.com/${username}/hello
-```
+    mkdir -p ${GOPATH}/src/github.com/${username}/hello
 
 ### Edit
 
-`${GOPATH}/src/github.com/${username}/hello/main.go`
+    ${editor} ${GOPATH}/src/github.com/${username}/hello/main.go
 
 ### Code
 
-```
-package main
+	package main
 
-import (
-	"fmt"
-)
+	import (
+		"fmt"
+	)
 
-func main() {
-	fmt.Println("Hello World")
-}
-```
+	func main() {
+		fmt.Println("Hello World")
+	}
+
 
 ### Build
 
-```
-go build main.go -o hello
-```
+    go build main.go -o hello
 
 ### Run
 
-```
-./hello
-```
+    ./hello
