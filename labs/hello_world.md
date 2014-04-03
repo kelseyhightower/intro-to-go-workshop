@@ -24,7 +24,7 @@
 ### Build
 
     cd ${GOPATH}/src/github.com/${username}/hello
-    go build main.go -o hello
+    go build -o hello main.go
 
 ### Run
 
