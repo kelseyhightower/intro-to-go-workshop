@@ -70,13 +70,6 @@ go build main.go
 ```
 
 
-### Managing dependencies with godep
-
-```
-go list -json
-go get github.com/kr/godep
-godep save
-```
 
 ### Exercise: Better error messages
 
