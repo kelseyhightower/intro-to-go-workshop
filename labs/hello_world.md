@@ -7,9 +7,7 @@
 #### Edit
 
     ${GOPATH}/src/github.com/${username}/hello/main.go
-
-#### Code
-
+-
 	package main
 
 	import (
