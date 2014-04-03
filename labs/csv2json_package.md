@@ -10,8 +10,7 @@ Package to convert CSV to JSON
 
     ${GOPATH}/src/github.com/${username}/csv2json/csv2json.go
 
-
-#### Code
+-
 
 	package csv2json
 
