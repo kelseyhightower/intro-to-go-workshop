@@ -1,15 +1,5 @@
 # Speed Tour
 
-* Statically compiled
-* Fast like C++ and Java
-* Less memory than Java, Ruby, and Python
-* Large standard library
-* Small language like C
-* Concurrency build-in — No Unicorn or multiple process required
-* Garbage collection
-* Great for building web services, worker process, and command line tools
-* Single binary — no gems or dynamic libs*
-
 ## Packages
 
 ### Creating a package
