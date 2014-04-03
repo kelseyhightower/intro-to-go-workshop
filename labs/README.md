@@ -5,7 +5,6 @@
 - [Package to convert CSV to JSON](csv2json_package.md)
 - [Testing](testing.md)
   - [Testing the csv2json package](csv2json_package_tests.md)
-  - [Automated Testing with drone.io](automated_testing_with_droneio.md)
 - [CLI tool to convert CSV to JSON](csv2json_cli.md)
 - [Managing Dependencies](managing_dependencies.md)
   - [Godeps](godeps.md)
