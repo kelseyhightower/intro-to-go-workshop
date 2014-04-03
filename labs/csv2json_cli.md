@@ -2,15 +2,15 @@
 
 CLI tool to convert CSV to JSON
 
-### Create
+#### Create
 
     ${GOPATH}/src/github.com/${username}/csv2json-cli
 
-### Edit
+#### Edit
 
     ${GOPATH}/src/github.com/${username}/csv2json-cli/main.go
 
-### Code
+#### Code
 
 	package main
 
@@ -49,11 +49,11 @@ CLI tool to convert CSV to JSON
 		fmt.Println(string(jsonData))
 	}
 
-### Edit
+#### Edit
 
     ${GOPATH}/src/github.com/${username}/famous-gophers.csv
 
-### Text
+#### Text
 
 	Mac, 1947, The Goofy Gophers
 	Tosh, 1947, The Goofy Gophers
@@ -61,15 +61,17 @@ CLI tool to convert CSV to JSON
 	Chief Running Board, 1968, Go Go Gophers
 	Ruffled Feathers, 1968, Go Go Gophers
 
-### Build
+#### Build
 
     go build -o csv2json main.go
 
-### Run
+#### Run
 
     ./csv2json -infile famous-gophers.csv
 
 
-## Exercise: Generate Go docs
+## Exercise
 
-    godoc -http=":8080"
+### Generate Go docs
+
+    godoc -http=":8000"
