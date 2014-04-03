@@ -57,11 +57,19 @@ HTTP API to convert CSV to JSON
 
 Hint:
 
-    import "os"
-    import "net"
+    import (
+        "os"
+        "net"
+    )
+
+    func main() {
+        listenAddr := net.JoinHostPort(host, port)
+    }
 
 ### Improve logging
 
 Hint:
 
-    import "log"
+    import (
+        "log"
+    )
