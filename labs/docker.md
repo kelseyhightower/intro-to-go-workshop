@@ -20,6 +20,10 @@ Installation Instructions: http://docs.docker.io/en/latest/installation
 
 ## Create a Dockerfile
 
+#### PWD
+
+    ${GOPATH}/src/github.com/${username}/csv2json-server
+
 #### Edit
 
     ${GOPATH}/src/github.com/${username}/csv2json-server/Dockerfile
