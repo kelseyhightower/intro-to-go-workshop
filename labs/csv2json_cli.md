@@ -63,7 +63,7 @@ CLI tool to convert CSV to JSON
 
 #### Build
 
-    go build -o csv2json main.go
+    go build -o csv2json .
 
 #### Run
 
