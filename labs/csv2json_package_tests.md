@@ -6,7 +6,7 @@
 
 -
 
-    package csv2json
+	package csv2json
 
 	import (
 		"bytes"
