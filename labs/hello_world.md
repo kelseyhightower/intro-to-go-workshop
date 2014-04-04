@@ -2,11 +2,11 @@
 
 #### Create
 
-    ${GOPATH}/src/github.com/${username}/hello
+    ${GOPATH}/src/hello
 
 #### Edit
 
-    ${GOPATH}/src/github.com/${username}/hello/main.go
+    ${GOPATH}/src/hello/main.go
 
 -
 
