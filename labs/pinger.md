@@ -130,3 +130,11 @@ Log response times from a list of websites
 		}
 		return &Result{t.url, duration}, nil
 	}
+
+#### Build
+
+    go build -o pinger .
+
+#### Run
+
+    ./pinger 
