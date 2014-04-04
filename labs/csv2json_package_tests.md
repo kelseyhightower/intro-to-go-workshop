@@ -10,8 +10,6 @@
 
 	import (
 		"bytes"
-		"io/ioutil"
-		"os"
 		"testing"
 	)
 
