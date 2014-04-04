@@ -69,9 +69,3 @@ CLI tool to convert CSV to JSON
 
     ./csv2json -infile ${HOME}/famous-gophers.csv
 
-
-## Exercise
-
-### Generate Go docs
-
-    godoc -http=":8000"
