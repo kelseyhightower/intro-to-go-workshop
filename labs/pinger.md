@@ -5,6 +5,7 @@ Log response times from a list of websites
 #### Create
 
 	${GOPATH}/src/pinger
+	${GOPATH}/src/pinger/ping
 
 #### Edit
 
@@ -15,10 +16,84 @@ Log response times from a list of websites
 	package main
 
 	import (
-		"fmt"
-		"log"
-		"net/http"
 		"sync"
+
+		"pinger/ping"
+	)
+
+	func main() {
+		targets := []string{
+			"http://google.com",
+			"http://puppetlabs.com",
+			"http://newrelic.com",
+		}
+		work := make(chan ping.Pinger)
+		result := make(chan *ping.Result)
+
+		var wg sync.WaitGroup
+		wg.Add(2)
+		go pinger(work, result, &wg)
+		go printer(result, &wg)
+
+		for _, t := range targets {
+			work <- ping.NewTarget(t)
+		}
+		close(work)
+		wg.Wait()
+	}
+
+#### Edit
+
+    ${GOPATH}/src/pinger/pinger.go
+
+-
+
+	package main
+
+	import (
+		"log"
+		"sync"
+
+		"pinger/ping"
+	)
+
+	func pinger(work chan ping.Pinger, result chan *ping.Result, wg *sync.WaitGroup) {
+		for {
+			w, ok := <-work
+			if !ok {
+				break
+			}
+			res, err := w.Ping()
+			if err != nil {
+				log.Printf("pinger: %s", err)
+				continue
+			}
+			result <- res
+		}
+		close(result)
+		wg.Done()
+	}
+
+	func printer(result chan *ping.Result, wg *sync.WaitGroup) {
+		for {
+			res, ok := <-result
+			if !ok {
+				break
+			}
+			log.Printf("ping %s %s", res.Url, res.Duration)
+		}
+		wg.Done()
+	}
+
+#### Edit
+
+    ${GOPATH}/src/pinger/ping/pinger.go
+
+-
+
+	import (
+		"fmt"
+		"net/http"
 		"time"
 	)
 
@@ -54,53 +129,3 @@ Log response times from a list of websites
 		}
 		return &Result{t.url, duration}, nil
 	}
-
-	func pinger(work chan Pinger, result chan *Result, wg *sync.WaitGroup) {
-		for {
-			w, ok := <-work
-			if !ok {
-				break
-			}
-			res, err := w.Ping()
-			if err != nil {
-				log.Printf("pinger: %s", err)
-				continue
-			}
-			result <- res
-		}
-		close(result)
-		wg.Done()
-	}
-
-	func printer(result chan *Result, wg *sync.WaitGroup) {
-		for {
-			res, ok := <-result
-			if !ok {
-				break
-			}
-			log.Printf("ping %s %s", res.Url, res.Duration)
-		}
-		wg.Done()
-	}
-
-	func main() {
-		targets := []string{
-			"http://google.com",
-			"http://puppetlabs.com",
-			"http://newrelic.com",
-		}
-		work := make(chan Pinger)
-		result := make(chan *Result)
-
-		var wg sync.WaitGroup
-		wg.Add(2)
-		go pinger(work, result, &wg)
-		go printer(result, &wg)
-
-		for _, t := range targets {
-			work <- NewTarget(t)
-		}
-		close(work)
-		wg.Wait()
-	}
-
