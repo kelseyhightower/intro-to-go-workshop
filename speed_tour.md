@@ -11,7 +11,6 @@ Create the package directory under GOPATH:
 
 Declare a package
 
-    // envconfig.go
     package envconfig
 
 ### Using packages
@@ -36,29 +35,21 @@ Multiple imports
 	var name string
 
 	var (
-	  name string
-	  age  int
-	  cool bool
+		name string
+		age  int
+		cool bool
 	)
 
 	func main() {
-	  name := "Kelsey Hightower"
-	  var age = 32
+		name := "Kelsey Hightower"
+		var age = 32
 	}
 
 ## Arrays
 
-Represents an array of four integers
-
-    [4]int 
-
     var buffer [256]byte
-	buffer[0]
-    buffer[1]
-    len(buffer)  // 256
+    len(buffer)
 
-Creating an array.
-	
     b := [2]string{"Penn", "Teller"}
 
 	// Let the compiler count the elements
@@ -66,8 +57,6 @@ Creating an array.
 
 
 ## Slices
-
-Creating a slice:
 
     var slice []byte = buffer[100:150]
     slice := buffer[100:150]
@@ -96,8 +85,13 @@ Interation:
 		Cool bool
 	}
 
-	make(map[string]Person)
+	m := make(map[string]Person)
+	m["me"] = Person{"Kelsey", 33, true}
 
+	p, ok := m["me"]
+	if !ok {
+		// I don't exist
+	}
 
 ## Errors
 
@@ -119,7 +113,10 @@ Handling errors.
 	err := DoSomething()
 	if err != nil {
 		// Handle error
-		return err
+	}
+
+	if err := DoSomething(); err != nil {
+		// Handle
 	}
 
 ## Structs
@@ -136,6 +133,4 @@ Handling errors.
 	func (p *Person) ChangeJobTitle(title string) error {
 		p.jobTitle = title
 	}
-
-
 
