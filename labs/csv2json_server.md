@@ -50,6 +50,19 @@ HTTP API to convert CSV to JSON
 
     ./csv2json-server
 
+#### Version
+
+    git init .
+    echo "csv2json-server" > .gitignore
+    git add .
+    git commit -m "first commit"
+
+#### Vendor
+
+    godep save
+    git add .
+    git commit -m "Manage dependencies with godep"
+
 ## Exercise
 
 ### Make the listen port configurable via the environment
