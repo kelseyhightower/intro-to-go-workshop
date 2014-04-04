@@ -42,10 +42,10 @@ Installation Instructions: http://docs.docker.io/en/latest/installation
 #### Run
 
     GOOS=linux go build -o csv2json-server .
-    docker -H tcp://${docker_host}:4243 build -t ${username}/csv2json-server .
-    docker -H tcp://${docker_host}:4243 images
-    docker -H tcp://${docker_host}:4243 ps
-    docker -H tcp://${docker_host}:4243 run -d -p 8080:8080 ${username}/csv2json-server
+    docker build -t ${username}/csv2json-server .
+    docker images
+    docker ps
+    docker run -d -p 8080:8080 ${username}/csv2json-server
  
 
 ## Testing with curl
