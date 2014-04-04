@@ -90,6 +90,7 @@ Log response times from a list of websites
     ${GOPATH}/src/pinger/ping/pinger.go
 
 -
+    package ping
 
 	import (
 		"fmt"
