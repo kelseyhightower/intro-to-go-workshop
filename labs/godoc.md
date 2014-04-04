@@ -42,7 +42,7 @@
 	}
 
 	// Ping makes an HTTP GET request to a target identified by t.url
-	// and records total roundtrip duration.  
+	// and records total roundtrip duration.
 	func (t *Target) Ping() (*Result, error) {
 		startTime := time.Now()
 		res, err := http.Get(t.url)
