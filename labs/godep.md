@@ -42,7 +42,7 @@
 
 ## Build Using Godep
 
-    godep go build -o csv2json main.go
+    godep go build -o csv2json .
 
 ## Test Using Godep
 
