@@ -47,5 +47,11 @@ Package to convert CSV to JSON
 
 #### Build
 
-    go build csv2json.go
+    go install .
+
+#### Inspect
+
+    file ${GOPATH}/pkg/darwin_amd64/github.com/${username}/csv2json.a
+
+    
 
