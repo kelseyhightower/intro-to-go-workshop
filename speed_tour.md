@@ -134,3 +134,47 @@ Handling errors.
 		p.jobTitle = title
 	}
 
+## Goroutines
+
+    func DoSomething() {
+        // stuff
+	}
+
+    func main() {
+    	go DoSomething()
+    }
+
+## Channels
+
+	package main
+
+	import (
+		"fmt"
+		"time"
+	)
+
+	func doubler(input, output chan int) {
+		for {
+			i := <-input
+			output <- i * 2
+		}
+	}
+
+	func printer(output chan int) {
+		for {
+			fmt.Printf("%d\n", <-output)
+		}
+	}
+
+	func main() {
+		input := make(chan int)
+		output := make(chan int)
+
+		go doubler(input, output)
+		go printer(output)
+
+		for i := 0; i <= 10; i++ {
+			input <- i
+		}
+		time.Sleep(time.Duration(1) * time.Second)
+	}
