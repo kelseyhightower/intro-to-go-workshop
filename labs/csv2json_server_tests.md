@@ -79,3 +79,10 @@
 Run using godep
 
     godep go test -v
+
+#### Version
+
+    git status
+    git add api_test.go
+    git commit -m "add api tests"
+
