@@ -86,8 +86,8 @@
 		if err != nil {
 			fmt.Print(err)
 		}
-		fmt.Print("url: %s duration: %s", t.url, t.duration)
-		// Output: url: http://google.com
+		fmt.Print("%s - %s", res.Url, res.Duration)
+		// Output: http://google.com - 201.100474ms
 	}
 
 
