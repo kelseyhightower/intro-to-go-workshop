@@ -69,3 +69,15 @@ CLI tool to convert CSV to JSON
 
     ./csv2json -infile ${HOME}/famous-gophers.csv
 
+#### Version
+
+    git init .
+    echo "csv2json" > .gitignore
+    git add .
+    git commit -m "first commit"
+
+#### Vendor
+
+    godep save
+    git add .
+    git commit -m "Manage dependencies with godep"
