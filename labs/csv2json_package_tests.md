@@ -63,6 +63,12 @@ Run with the -v flag for verbose output:
 
     go test -v
 
+#### Version
+
+    git status
+    git add csv2json_test.go
+    git commit -m "add tests"
+
 ## Exercise
 
 ### Write an additional test
