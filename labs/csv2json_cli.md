@@ -51,7 +51,7 @@ CLI tool to convert CSV to JSON
 
 #### Edit
 
-    ${GOPATH}/src/github.com/${username}/famous-gophers.csv
+    ${HOME}/famous-gophers.csv
 
 -
 
@@ -67,7 +67,7 @@ CLI tool to convert CSV to JSON
 
 #### Run
 
-    ./csv2json -infile famous-gophers.csv
+    ./csv2json -infile ${HOME}/famous-gophers.csv
 
 
 ## Exercise
