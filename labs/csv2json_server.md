@@ -44,7 +44,7 @@ HTTP API to convert CSV to JSON
 
 #### Build
 
-    go build -o csv2json-server main.go
+    go build -o csv2json-server .
 
 #### Run
 
