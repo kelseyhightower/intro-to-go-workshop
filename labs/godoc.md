@@ -70,14 +70,16 @@
 
 #### Edit
 
-    ${GOPATH}/src/pinger/ping/pinger_test.go
+    ${GOPATH}/src/pinger/ping/example_test.go
 
 -
 
-	package ping
+	package ping_test
 
 	import (
 		"fmt"
+
+		. "pinger/ping"
 	)
 
 	func ExampleNewTarget() {
@@ -86,10 +88,8 @@
 		if err != nil {
 			fmt.Print(err)
 		}
-		fmt.Print("%s - %s", res.Url, res.Duration)
-		// Output: http://google.com - 201.100474ms
+		fmt.Printf("%s - %s", res.Url, res.Duration)
 	}
-
 
 #### Run
 
