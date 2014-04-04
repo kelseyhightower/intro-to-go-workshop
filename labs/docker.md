@@ -45,8 +45,7 @@ Installation Instructions: http://docs.docker.io/en/latest/installation
     docker build -t ${username}/csv2json-server .
     docker images
     docker ps
-    docker run -d -p 8080:8080 ${username}/csv2json-server
- 
+    docker run -d -P ${username}/csv2json-server
 
 ## Testing with curl
 
