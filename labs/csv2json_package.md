@@ -53,5 +53,8 @@ Package to convert CSV to JSON
 
     file ${GOPATH}/pkg/darwin_amd64/github.com/${username}/csv2json.a
 
-    
+#### Version
 
+    git init .
+    git add .
+    git commit -m "first commit"
