@@ -41,6 +41,7 @@ Installation Instructions: http://docs.docker.io/en/latest/installation
 
 #### Run
 
+    GOOS=linux go build -o csv2json-server .
     docker -H tcp://${docker_host}:4243 build -t ${username}/csv2json-server .
     docker -H tcp://${docker_host}:4243 images
     docker -H tcp://${docker_host}:4243 ps
