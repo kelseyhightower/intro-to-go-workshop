@@ -11,3 +11,4 @@
 - [HTTP API to convert CSV to JSON](csv2json_server.md)
 - [Testing csv2json-server](csv2json_server_tests.md)
 - [Cross Compiling](cross_compiling.md)
+- [Deploy with Docker](docker.md)
