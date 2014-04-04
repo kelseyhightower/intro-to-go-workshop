@@ -49,5 +49,11 @@ Installation Instructions: http://docs.docker.io/en/latest/installation
 
 ## Testing with curl
 
-    curl -X POST http://${docker_host}:8080/csv2json --data-binary @${HOME}/famous-gophers.csv
+### Get the TCP port from docker
+
+    docker port ${container} 8080
+
+#### Run
+
+    curl -X POST http://${docker_host}:${port}/csv2json --data-binary @${HOME}/famous-gophers.csv
 
