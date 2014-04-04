@@ -5,10 +5,6 @@
     cd ${GOPATH}/src
     git clone git@github.com:kelseyhightower/pinger.git
 
-## Exercise
-
-### Add package documentation
-
 #### Edit
 
     ${GOPATH}/src/pinger/ping/pinger.go
@@ -62,3 +58,43 @@
 		}
 		return &Result{t.url, duration}, nil
 	}
+
+#### Edit
+
+    ${GOPATH}/src/pinger/ping/doc.go 
+
+-
+
+    // Package ping provides Pinger.
+    package ping
+
+#### Edit
+
+    ${GOPATH}/src/pinger/ping/pinger_test.go
+
+-
+
+	package ping
+
+	import (
+		"fmt"
+	)
+
+	func ExampleNewTarget() {
+		t := NewTarget("http://google.com")
+		res, err := t.Ping()
+		if err != nil {
+			fmt.Print(err)
+		}
+		fmt.Print("url: %s duration: %s", t.url, t.duration)
+		// Output: url: http://google.com
+	}
+
+
+#### Run
+
+    godoc -http=":6060"
+
+#### Visit
+
+    http://localhost:6060/pkg
