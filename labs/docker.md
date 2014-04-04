@@ -49,7 +49,7 @@ Installation Instructions: http://docs.docker.io/en/latest/installation
 
 ## Testing with curl
 
-### Get the TCP port from docker
+#### Inspect
 
     docker port ${container} 8080
 
