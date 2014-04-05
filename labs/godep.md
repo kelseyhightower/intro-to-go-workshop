@@ -4,57 +4,45 @@
 
     go get github.com/tools/godep
 
-## Inspect the dependencies for csv2json-cli
+## Save Dependencies
+
+#### Inspect
 
     cd ${GOPATH}/src/github.com/${username}/csv2json-cli
     go list -json
 
-## Vendor Dependencies
+#### Vendor
 
     godep save
 
-### Inspect Godeps/Godeps.json 
+#### Inspect 
 
-	{
-		"ImportPath": "github.com/kelseyhightower/csv2json-cli",
-		"GoVersion": "go1.2",
-		"Deps": [
-			{
-				"ImportPath": "github.com/kelseyhightower/csv2json",
-				"Rev": "0ca8ee22d850f992f466c21bb8105ef8cba2184b"
-			}
-		]
-	}
+    cat Godeps/Godeps.json
 
-### Inspect Godep Directory
+#### Inspect
 
-	Godeps/
-	├── Godeps.json
-	├── Readme
-	└── _workspace
-		└── src
-			└── github.com
-				└── kelseyhightower
-					└── csv2json
-						├── README.md
-						├── csv2json.go
-						└── csv2json_test.go
+    tree Godeps
 
-## Build Using Godep
+#### Version
+
+    git add Godeps
+    git commit -m "Manage dependencies with Godep"
+
+## Building with Godep
+
+#### Build
 
     godep go build -o csv2json .
 
-## Test Using Godep
+## Testing with Godep
+
+#### Test
 
     godep go test
 
-## Restore Dependencies
-
-    rm -rf ${GOPATH}/src/github.com/${username}/csv2json
-    godep restore
-
-
 ## Updating Dependencies
+
+#### Run
 
     godep restore
     go get -u github.com/${username}/csv2json
