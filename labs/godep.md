@@ -4,10 +4,9 @@
 
     go get github.com/tools/godep
 
-
 ## Save Dependencies
 
-#### PWD
+Change directories:
 
     cd ${GOPATH}/src/github.com/${username}/csv2json-cli
 
