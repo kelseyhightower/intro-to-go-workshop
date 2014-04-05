@@ -2,77 +2,68 @@
 
 ## Packages
 
-### Creating a package
-
-Create the package directory under GOPATH:
-
-    mkdir ${GOPATH}/src/github.com/kelseyhightower/envconfig
-    touch ${GOPATH}/src/github.com/kelseyhightower/envconfig/envconfig.go
-
-Declare a package
-
-    package envconfig
-
-### Using packages
-
-    import "github.com/kelseyhightower/envconfig"
-
-Multiple imports
-
     import(
        "fmt"
        "log"
 
-       "github.com/kelseyhightower/envconfig"
+       "github.com/kelseyhightower/targz"
     )
-
-### Package main
-
-    package main
 
 ## Variables
 
-	var name string
-
 	var (
-		name string
-		age  int
-		cool bool
+		name     string
+    	Location = "Portland"
 	)
 
 	func main() {
-		name := "Kelsey Hightower"
-		var age = 32
+    	var name string = "Kelsey Hightower"
+
+        var name string
+		name = "Kelsey Hightower"
+
+        name := "Kelsey Hightower"
 	}
 
 ## Arrays
 
-    var buffer [256]byte
-    len(buffer)
+    func main() {
+    	var buffer [256]byte
 
-    b := [2]string{"Penn", "Teller"}
+		locations := [...]string{
+    		"Long Beach",
+    		"Atlanta",
+    		"Portland",
+    	} 
 
-	// Let the compiler count the elements
-	b := [...]string{"Penn", "Teller"} 
-
+    	fmt.Printf("Number of locations: %d", len(locations))
+    }
 
 ## Slices
 
-    var slice []byte = buffer[100:150]
-    slice := buffer[100:150]
+	func main() {
+		locations := []string{
+			"Long Beach",
+			"Atlanta",
+			"Portland",
+			"New York",
+			"Denver",
+			"Dallas",
+		}
+		for _, name := range locations {
+			fmt.Printf("Name: %s\n", name)
+		}
 
-	names = make([]string, 0, 100)
-	names := []string{
-		"Rob",
-		"Robert",
-		"Ken",
-	} 
+		middleTwo := locations[2:4]
+		fmt.Printf("%#v", middleTwo)
 
-Interation:
-
-	for i, name := range names {
-		fmt.Printf("Name: %s Index: %d", name, i) 
+        ints := make([]int, 0)
+    	for i := 0; i <= 100; i++ {
+    		ints = append(ints, i)
+		}
+    	fmt.Printf("%#v", ints)
 	}
+
 
 ## Maps
 
