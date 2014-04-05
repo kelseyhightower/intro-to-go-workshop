@@ -28,14 +28,11 @@
 ## Arrays
 
     func main() {
-    	var buffer [256]byte
-
-		locations := [...]string{
+		locations := [3]string{
     		"Long Beach",
     		"Atlanta",
     		"Portland",
     	} 
-
     	fmt.Printf("Number of locations: %d", len(locations))
     }
 
@@ -87,8 +84,9 @@
     func main() {
 		result, err := http.Get("http://example.com")
 		if err != nil {
-			// Handle error
+			log.Fatal(err)
 		}
+    	fmt.Println(result.StatusCode)
 	}
 
 ## Structs
