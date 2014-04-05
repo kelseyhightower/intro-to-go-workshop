@@ -10,7 +10,7 @@ Installation Instructions: http://docs.docker.io/en/latest/installation
 
 #### Download
 
-    curl -o docker https://get.docker.io/builds/Darwin/x86_64/docker-latest
+    curl -o docker https://get.docker.io/builds/Linux/x86_64/docker-latest
 
 #### Install
 	
