@@ -2,6 +2,12 @@
 
 ## Install Godep
 
+#### Change Directory
+
+    cd ${HOME}
+
+#### Run
+
     go get github.com/tools/godep
 
 ## Save Dependencies
