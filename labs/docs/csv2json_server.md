@@ -72,19 +72,6 @@ Test with curl:
 
 ## Exercise
 
-### Make the listen port configurable via the environment
-
-#### Hint
-
-    import (
-        "os"
-        "net"
-    )
-
-    func main() {
-        listenAddr := net.JoinHostPort(host, port)
-    }
-
 ### Improve logging
 
 #### Hint
