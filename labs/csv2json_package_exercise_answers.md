@@ -88,3 +88,8 @@
 			t.Errorf("TestConvertWithFile(f, %s) = %s; want %s", columns, string(got), want)
 		}
 	}
+
+#### Version
+
+    git add csv2json_test.go
+    git commit -m "add more tests" 
