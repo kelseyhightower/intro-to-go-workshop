@@ -13,17 +13,15 @@
 
 	var (
 		name     string
-    	Location = "Portland"
+		Location = "Portland"
 	)
 
 	func main() {
-    	var name string = "Kelsey Hightower"
-
-        var name string
 		name = "Kelsey Hightower"
-
-        name := "Kelsey Hightower"
+		distro := "CoreOS"
+		fmt.Printf("Name: %s\nLocation: %s\nDistro: %s\n", name, Location, distro)
 	}
+
 
 ## Arrays
 
