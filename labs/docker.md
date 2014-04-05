@@ -24,13 +24,13 @@ Change directories:
 
 ## Create a Dockerfile
 
-#### PWD
+Change directories:
 
-    ${GOPATH}/src/github.com/${username}/csv2json-server
+    cd ${GOPATH}/src/github.com/${username}/csv2json-server
 
 #### Edit
 
-    ${GOPATH}/src/github.com/${username}/csv2json-server/Dockerfile
+    Dockerfile
 
 -
 
@@ -43,12 +43,24 @@ Change directories:
 	ADD        csv2json-server /usr/local/bin/csv2json-server
 	ENTRYPOINT ["/usr/local/bin/csv2json-server"]
 
-#### Run
+#### Build
 
     GOOS=linux go build -o csv2json-server .
+
+## Build the Docker Image
+
+#### Run
+
     docker build -t ${username}/csv2json-server .
+
+#### Inspect
+
     docker images
-    docker ps
+
+## Run the Docker Image
+
+#### Run
+
     docker run -d -P ${username}/csv2json-server
 
 ## Testing with curl
