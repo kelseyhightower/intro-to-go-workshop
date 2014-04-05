@@ -55,7 +55,7 @@ Package to convert CSV to JSON
 
 #### Inspect
 
-    file ${GOPATH}/pkg/darwin_amd64/github.com/${username}/csv2json.a
+    file ${GOPATH}/pkg/linux_amd64/github.com/${username}/csv2json.a
 
 #### Version
 
