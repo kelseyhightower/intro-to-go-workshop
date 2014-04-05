@@ -122,36 +122,34 @@ Handling errors.
 ## Structs
 
 	type Person struct {
-		Name string
-		Age  int
-		Cool bool
+		name     string
+		Location string
 	}
 
-
-### Methods
-
-	func (p *Person) ChangeJobTitle(title string) error {
-		p.jobTitle = title
+	func NewPerson(name string) *Person {
+		p := Person{
+			name: name,
+		}
+		return &p
 	}
 
-## Goroutines
-
-    func DoSomething() {
-        // stuff
+	func (p *Person) Name() string {
+		return p.name
 	}
 
-    func main() {
-    	go DoSomething()
-    }
+	func (p *Person) SetName(name string) {
+		p.name = name
+	}
 
-## Channels
+	func main() {
+		p := NewPerson("Kelsey")
+		fmt.Printf("Name: %s\n", p.Name())
 
-	package main
+		p.Location = "Portland"
+		fmt.Printf("Location: %s\n", p.Location)
+	}
 
-	import (
-		"fmt"
-		"time"
-	)
+## Channels and Goroutines
 
 	func doubler(input, output chan int) {
 		for {
