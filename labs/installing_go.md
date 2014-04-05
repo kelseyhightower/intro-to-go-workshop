@@ -1,9 +1,5 @@
 # Installing Go
 
-#### PWD
-
-    cd ${HOME}
-
 ## Installation
 
 ### Install a binary distribution
