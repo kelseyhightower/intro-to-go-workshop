@@ -4,7 +4,7 @@
 
     mkdir ${GOPATH}/src/hello
 
-Change directories:
+#### Change Directory
 
     cd ${GOPATH}/src/hello
 
