@@ -2,12 +2,20 @@
 
 ## Clone the Pinger Repo
 
+#### Run
+
     cd ${GOPATH}/src
     git clone git@github.com:kelseyhightower/pinger.git
 
+## Add Comments
+
+Change directories:
+
+    cd ${GOPATH}/src/pinger
+
 #### Edit
 
-    ${GOPATH}/src/pinger/ping/pinger.go
+    ping/pinger.go
 
 -
 
@@ -61,7 +69,7 @@
 
 #### Edit
 
-    ${GOPATH}/src/pinger/ping/doc.go 
+    ping/doc.go 
 
 -
 
@@ -70,7 +78,7 @@
 
 #### Edit
 
-    ${GOPATH}/src/pinger/ping/example_test.go
+    ping/example_test.go
 
 -
 
