@@ -1,8 +1,9 @@
 # Intro to Go Workshop
 
-- Intro to Go Presentation
+## Speed Tour
+
 - [Speed Tour](speed_tour.md)
 
 ## Hands on Labs
 
-Labs live under the [labs](labs) directory
+- [Hands on Labs](labs)
