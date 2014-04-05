@@ -54,11 +54,14 @@ HTTP API to convert CSV to JSON
 
     ./csv2json-server
 
+Test with curl:
+
+    curl -X POST http://localhost:8080/csv2json --data-binary @${HOME}/famous-gophers.csv
+
 #### Version
 
     git init .
-    echo "csv2json-server" > .gitignore
-    git add .
+    git add main.go
     git commit -m "first commit"
 
 #### Vendor
