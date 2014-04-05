@@ -67,7 +67,7 @@ Test with curl:
 #### Vendor
 
     godep save
-    git add .
+    git add Godeps
     git commit -m "Manage dependencies with godep"
 
 ## Exercise
