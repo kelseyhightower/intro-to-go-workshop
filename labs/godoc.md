@@ -2,14 +2,17 @@
 
 ## Clone the Pinger Repo
 
-#### Run
+#### Change Directory
 
     cd ${GOPATH}/src
+
+#### Run
+
     git clone git@github.com:kelseyhightower/pinger.git
 
 ## Add Comments
 
-Change directories:
+#### Change Directory
 
     cd ${GOPATH}/src/pinger
 
