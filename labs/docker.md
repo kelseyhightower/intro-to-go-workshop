@@ -4,6 +4,10 @@
 
 Installation Instructions: http://docs.docker.io/en/latest/installation
 
+Change directories:
+
+    cd ${HOME}
+
 #### Download
 
     curl -o docker https://get.docker.io/builds/Darwin/x86_64/docker-latest
