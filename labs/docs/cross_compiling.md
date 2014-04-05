@@ -25,6 +25,9 @@
 
     GOOS=darwin GOARCH=amd64 go build -o csv2json-server main.go
 
+#### Inspect
+
+    file csv2json-server
 
 ## Exercise
 
