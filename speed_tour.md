@@ -77,15 +77,18 @@
 		}
     }
 
-## Errors
+## Functions
 
-    func main() {
-		result, err := http.Get("http://example.com")
+    func ping(url string) bool {
+		resp, err := http.Get(string)
 		if err != nil {
-			log.Fatal(err)
+			return false
 		}
-    	fmt.Println(result.StatusCode)
-	}
+		if resp.StatusCode != http.StatusOK {
+			return false
+		}
+		return true
+    }
 
 ## Structs
 
