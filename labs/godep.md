@@ -7,8 +7,6 @@
 
 ## Save Dependencies
 
-#### PWD
-
     cd ${GOPATH}/src/github.com/${username}/csv2json-cli
 
 #### Inspect
