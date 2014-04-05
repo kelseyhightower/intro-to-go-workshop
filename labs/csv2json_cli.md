@@ -76,7 +76,6 @@ CLI tool to convert CSV to JSON
 #### Version
 
     git init .
-    echo "csv2json" > .gitignore
-    git add .
+    git add main.go
     git commit -m "first commit"
 

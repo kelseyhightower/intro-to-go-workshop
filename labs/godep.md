@@ -49,11 +49,3 @@
 #### Run
 
     godep go test
-
-## Updating Dependencies
-
-#### Run
-
-    godep restore
-    go get -u github.com/${username}/csv2json
-    godep save
