@@ -58,11 +58,11 @@
 		startTime := time.Now()
 		res, err := http.Get(t.url)
 		duration := time.Since(startTime)
+		defer res.Body.Close()
 
 		if err != nil {
 			return nil, err
 		}
-		defer res.Body.Close()
 
 		if res.StatusCode != http.StatusOK {
 			return nil, fmt.Errorf("ping error from %s bad status: %d", t.url, res.StatusCode)
