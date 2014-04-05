@@ -7,9 +7,12 @@
 
 ## Save Dependencies
 
-#### Inspect
+#### PWD
 
     cd ${GOPATH}/src/github.com/${username}/csv2json-cli
+
+#### Inspect
+
     go list -json
 
 #### Vendor
