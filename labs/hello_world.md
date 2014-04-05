@@ -4,7 +4,7 @@
 
     mkdir ${GOPATH}/src/hello
 
-#### Run
+#### PWD
 
     cd ${GOPATH}/src/hello
 
