@@ -4,7 +4,7 @@
 
 Installation Instructions: http://docs.docker.io/en/latest/installation
 
-Change directories:
+#### Change Directory
 
     cd ${HOME}
 
@@ -24,7 +24,7 @@ Change directories:
 
 ## Create a Dockerfile
 
-Change directories:
+#### Change Directory
 
     cd ${GOPATH}/src/github.com/${username}/csv2json-server
 
