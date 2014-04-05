@@ -4,9 +4,13 @@
 
     ${GOPATH}/src/hello
 
+#### Run
+
+    cd ${GOPATH}/src/hello
+
 #### Edit
 
-    ${GOPATH}/src/hello/main.go
+    main.go
 
 -
 
