@@ -6,9 +6,13 @@ CLI tool to convert CSV to JSON
 
     ${GOPATH}/src/github.com/${username}/csv2json-cli
 
+Change directories:
+
+    cd ${GOPATH}/src/github.com/${username}/csv2json-cli
+
 #### Edit
 
-    ${GOPATH}/src/github.com/${username}/csv2json-cli/main.go
+    main.go
 
 -
 
