@@ -2,8 +2,14 @@
 
 ## Installation
 
+#### Change Directory
+
+    cd ${HOME}
+
 ### Install a binary distribution
  
+#### Run
+
     wget https://go.googlecode.com/files/go1.2.linux-amd64.tar.gz
     tar -xvf go1.2.linux-amd64.tar.gz -C /usr/local
 
