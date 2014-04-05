@@ -7,9 +7,13 @@ Log response times from a list of websites
 	${GOPATH}/src/pinger
 	${GOPATH}/src/pinger/ping
 
+#### Change Directory
+
+    cd ${GOPATH}/src/pinger
+
 #### Edit
 
-	${GOPATH}/src/pinger/main.go
+	main.go
 
 -
 
@@ -44,7 +48,7 @@ Log response times from a list of websites
 
 #### Edit
 
-    ${GOPATH}/src/pinger/pinger.go
+    pinger.go
 
 -
 
@@ -87,7 +91,7 @@ Log response times from a list of websites
 
 #### Edit
 
-    ${GOPATH}/src/pinger/ping/pinger.go
+    ping/pinger.go
 
 -
     package ping
