@@ -6,8 +6,6 @@
 
 ### Build the Linux Tool Chain
 
--
-
     cd /usr/local/go/src
 
 #### Run
