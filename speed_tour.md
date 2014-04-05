@@ -67,47 +67,28 @@
 
 ## Maps
 
-	map[string]string
-	map[string]interface{}
+    func main() {
+		m := make(map[string]string)
+		m["name"] = "Kelsey"
 
-	type Person struct {
-		Name string
-		Age int
-		Cool bool
-	}
+		name, ok := m["name"]
+		if !ok {
+			log.Fatal("Name does not exist")
+		}
+		fmt.Println(name)
 
-	m := make(map[string]Person)
-	m["me"] = Person{"Kelsey", 33, true}
-
-	p, ok := m["me"]
-	if !ok {
-		// I don't exist
-	}
+		for k, v := range m {
+			fmt.Printf("Key: %s Value: %s", k, v)
+		}
+    }
 
 ## Errors
 
-	import "errors"
-
-	errors.New("cannot read file from disk")
-
-
-Using the "fmt" package.
-
-
-	import "fmt"
-
-	fmt.Errorf("got an error: %s", err)
-
-
-Handling errors.
-
-	err := DoSomething()
-	if err != nil {
-		// Handle error
-	}
-
-	if err := DoSomething(); err != nil {
-		// Handle
+    func main() {
+		result, err := http.Get("http://example.com")
+		if err != nil {
+			// Handle error
+		}
 	}
 
 ## Structs
