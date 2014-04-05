@@ -75,9 +75,3 @@ CLI tool to convert CSV to JSON
     echo "csv2json" > .gitignore
     git add .
     git commit -m "first commit"
-
-#### Vendor
-
-    godep save
-    git add .
-    git commit -m "Manage dependencies with godep"
