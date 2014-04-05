@@ -6,9 +6,13 @@ Package to convert CSV to JSON
 
     ${GOPATH}/src/github.com/${username}/csv2json
 
+Change directories:
+
+    cd ${GOPATH}/src/github.com/${username}/csv2json
+
 #### Edit
 
-    ${GOPATH}/src/github.com/${username}/csv2json/csv2json.go
+    csv2json.go
 
 -
 
