@@ -2,7 +2,7 @@
 
 #### Create
 
-    ${GOPATH}/src/hello
+    mkdir ${GOPATH}/src/hello
 
 #### Run
 
