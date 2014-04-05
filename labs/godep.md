@@ -4,6 +4,7 @@
 
     go get github.com/tools/godep
 
+
 ## Save Dependencies
 
 #### Inspect
@@ -21,22 +22,23 @@
 
 #### Inspect
 
-    tree Godeps
+    ls -R Godeps
 
 #### Version
 
     git add Godeps
     git commit -m "Manage dependencies with Godep"
 
+
 ## Building with Godep
 
-#### Build
+#### Run
 
     godep go build -o csv2json .
 
 ## Testing with Godep
 
-#### Test
+#### Run
 
     godep go test
 
