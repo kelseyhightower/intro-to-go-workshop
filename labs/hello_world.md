@@ -3,6 +3,9 @@
 #### Create
 
     mkdir ${GOPATH}/src/hello
+
+- 
+
     cd ${GOPATH}/src/hello
 
 #### Edit
