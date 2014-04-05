@@ -6,9 +6,13 @@ HTTP API to convert CSV to JSON
 
     ${GOPATH}/src/github.com/${username}/csv2json-server
 
+Change directories:
+
+    cd ${GOPATH}/src/github.com/${username}/csv2json-server
+
 #### Edit
 
-    ${GOPATH}/src/github.com/${username}/csv2json-server/main.go
+    main.go
 
 -
 
