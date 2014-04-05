@@ -1,11 +1,5 @@
 # Cross Compiling
 
-### Key Environment Variables
-
-- GOOS
-- GOARCH
-- CGO_ENABLED
-
 ### Requirements
 
 - gcc
@@ -14,7 +8,7 @@
 
 -
 
-   cd /usr/local/go/src
+    cd /usr/local/go/src
 
 #### Run
 
