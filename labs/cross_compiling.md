@@ -15,10 +15,7 @@
 
 ### Cross Compile csv2json_server
 
--
-
-    cd ${GOPATH}/src/github.com/${username}/csv2json-server
-
 #### Run
 
+    cd ${GOPATH}/src/github.com/${username}/csv2json-server
     GOOS=darwin GOARCH=amd64 go build -o csv2json-server main.go
