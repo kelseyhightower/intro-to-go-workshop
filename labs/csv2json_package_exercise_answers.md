@@ -2,7 +2,7 @@
 
 ## Write an additional test
 
-Change directories:
+#### Change Directory
 
     cd ${GOPATH}/src/github.com/${username}/csv2json
 

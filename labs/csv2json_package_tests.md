@@ -1,6 +1,6 @@
 # Testing the csv2json package
 
-Change directories:
+#### Change Directory
 
     cd ${GOPATH}/src/github.com/${username}/csv2json
 

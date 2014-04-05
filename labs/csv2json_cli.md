@@ -6,7 +6,7 @@ CLI tool to convert CSV to JSON
 
     ${GOPATH}/src/github.com/${username}/csv2json-cli
 
-Change directories:
+#### Change Directory
 
     cd ${GOPATH}/src/github.com/${username}/csv2json-cli
 
