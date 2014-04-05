@@ -4,7 +4,7 @@ CLI tool to convert CSV to JSON
 
 #### Create
 
-    ${GOPATH}/src/github.com/${username}/csv2json-cli
+    mkdir ${GOPATH}/src/github.com/${username}/csv2json-cli
 
 #### Change Directory
 
@@ -79,3 +79,4 @@ CLI tool to convert CSV to JSON
     echo "csv2json" > .gitignore
     git add .
     git commit -m "first commit"
+
