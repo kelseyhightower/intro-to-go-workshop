@@ -1,10 +1,10 @@
 # Cross Compiling
 
-### Requirements
+## Requirements
 
 - gcc
 
-### Build the Tool Chains
+## Build the Tool Chains
 
 #### Change Directory
 
@@ -15,7 +15,7 @@
     for os in linux windows darwin; do GOOS=${os} GOARCH=amd64 CGO_ENABLED=0 ./make.bash —no-clean; done
 
 
-### Cross Compile csv2json_server
+## Cross Compile csv2json_server
 
 #### Change Directory
 
@@ -24,3 +24,8 @@
 #### Run
 
     GOOS=darwin GOARCH=amd64 go build -o csv2json-server main.go
+
+
+## Exercise
+
+### Cross Compile for linux, windows, and darwin
