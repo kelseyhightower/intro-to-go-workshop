@@ -4,8 +4,8 @@ Log response times from a list of websites
 
 #### Create
 
-	${GOPATH}/src/pinger
-	${GOPATH}/src/pinger/ping
+	mkdir ${GOPATH}/src/pinger
+	mkdir ${GOPATH}/src/pinger/ping
 
 #### Change Directory
 
