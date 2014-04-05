@@ -69,7 +69,6 @@ Run with the -v flag for verbose output:
 
 #### Version
 
-    git status
     git add csv2json_test.go
     git commit -m "add tests"
 
