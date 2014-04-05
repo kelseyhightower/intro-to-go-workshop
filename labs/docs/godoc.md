@@ -8,7 +8,7 @@
 
 #### Run
 
-    git clone git@github.com:kelseyhightower/pinger.git
+    git clone https://github.com/kelseyhightower/pinger.git
 
 ## Add Comments
 
