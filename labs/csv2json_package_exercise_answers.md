@@ -2,9 +2,13 @@
 
 ## Write an additional test
 
+Change directories:
+
+    cd ${GOPATH}/src/github.com/${username}/csv2json
+
 #### Edit
 
-    ${GOPATH}/src/github.com/${username}/csv2json/csv2json_test.go
+    csv2json_test.go
 
 -
 
