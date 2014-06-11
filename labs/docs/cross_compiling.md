@@ -14,6 +14,10 @@
 
     for os in linux windows darwin; do GOOS=${os} GOARCH=amd64 CGO_ENABLED=0 ./make.bash —no-clean; done
 
+**NOTE**: Make sure to not include the OS you are actually running in this list or you will end up with
+a build of Go that has CGO disabled. So if you are running on OSX, for exampple, this should be:
+
+    for os in linux windows; do GOOS=${os} GOARCH=amd64 CGO_ENABLED=0 ./make.bash —no-clean; done
 
 ## Cross Compile csv2json_server
 
