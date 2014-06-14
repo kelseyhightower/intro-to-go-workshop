@@ -1,0 +1,86 @@
+Intro to Go Workshop
+Epicodus
+10:00 3 May 2014
+Tags: go
+
+Kelsey Hightower
+Gopher
+kelsey.hightower@gmail.com
+@kelseyhightower
+
+* Wifi
+
+SSID
+
+  epicodus
+Password
+
+  stayfocused
+
+* Workshop Online
+
+https://github.com/kelseyhightower/intro-to-go-workshop
+
+* Speed Tour
+
+* Speed Tour
+
+Packages
+
+.code code/packages.go
+
+* Speed Tour
+
+Variables
+
+.play code/variables.go
+
+* Speed Tour
+
+Arrays
+
+.play code/arrays.go
+
+* Speed Tour
+
+Slices
+
+.play code/slices.go
+
+* Speed Tour
+
+Slices
+
+.play code/slices2.go
+
+* Speed Tour
+
+Maps
+
+.play code/maps.go
+
+* Speed Tour
+
+Structs
+
+.code code/structs.go /START 0 OMIT/,/END 0 OMIT/
+
+* Speed Tour
+
+Structs
+
+.play code/structs.go /START 1 OMIT/,/END 1 OMIT/
+
+* Hands on Exercises
+
+* Hands on Exercises
+
+Configure Git
+
+  git config --global user.name "Kelsey Hightower"
+  git config --global user.email kelsey.hightower@gmail.com
+
+Set Environment Variables
+
+  export docker_host=173.255.117.47
+  export username = kelseyhightower

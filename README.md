@@ -16,8 +16,8 @@
 
 ### Set Environment Variables
 
-    export docker_host = $docker_host_from_slide
-    export username = kelseyhightower
+    export docker_host=$docker_host_from_slide
+    export username=kelseyhightower
 
 ## Speed Tour
 
