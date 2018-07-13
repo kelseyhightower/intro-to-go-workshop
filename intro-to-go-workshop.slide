@@ -74,3 +74,11 @@ Configure Git
 Set Environment Variables
 
   export username = jonathan
+
+* Credit
+
+Special thanks to Kelsey Hightower for putting this workshop together.
+
+kelsey.hightower@gmail.com
+@kelseyhightower
+https://github.com/kelseyhightower/intro-to-go-workshop
