@@ -16,12 +16,7 @@ Installation Instructions: http://docs.docker.io/en/latest/installation
 	
 	chmod +x docker
     sudo cp docker /usr/local/bin/
-
-#### Configure
-
-    export DOCKER_HOST=tcp://${docker_host}:4243
-
-
+    
 ## Create a Dockerfile
 
 #### Change Directory

@@ -1,25 +1,16 @@
 Intro to Go Workshop
-Epicodus
+Yasssss! Finally!
 10:00 3 May 2014
 Tags: go
 
-Kelsey Hightower
-Gopher
-kelsey.hightower@gmail.com
-@kelseyhightower
-
-* Wifi
-
-SSID
-
-  epicodus
-Password
-
-  stayfocused
+Jonathan Friesen
+Developer (Part-time Gopher)
+jonathan.friesen01@sap.com
+@jonfriesen
 
 * Workshop Online
 
-https://github.com/kelseyhightower/intro-to-go-workshop
+https://github.com/jonfriesen/intro-to-go-workshop
 
 * Speed Tour
 
@@ -77,10 +68,9 @@ Structs
 
 Configure Git
 
-  git config --global user.name "Kelsey Hightower"
-  git config --global user.email kelsey.hightower@gmail.com
+  git config --global user.name "Jonathan Friesen"
+  git config --global user.email jonathan.friesen01@sap.com
 
 Set Environment Variables
 
-  export docker_host=173.255.117.47
-  export username = kelseyhightower
+  export username = jonathan
