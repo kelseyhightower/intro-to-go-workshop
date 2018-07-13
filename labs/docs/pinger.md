@@ -94,6 +94,7 @@ Log response times from a list of websites
     ping/pinger.go
 
 -
+
     package ping
 
 	import (
