@@ -3,21 +3,33 @@
 ## Requirements
 
 - [Git](http://git-scm.com)
-- [Mercurial](http://mercurial.selenic.com)
 
-### Install Git and Mercurial
+### Install Git (Linux)
 
-    apt-get install git mercurial
-
-### Configure Git
-
-    git config --global user.name "Kelsey Hightower"
-    git config --global user.email kelsey.hightower@gmail.com
+    apt-get install git
 
 ### Set Environment Variables
 
-    export docker_host=$docker_host_from_slide
-    export username=kelseyhightower
+    export username=jonathan
+
+## Slides
+
+### Online
+
+- [Slides](https://go-talks.appspot.com/github.com/jonfriesen/intro-to-go-workshop/intro-to-go-workshop.slide#1)
+
+### Local
+
+```
+$ go get golang.org/x/net
+$ go get golang.org/x/tools
+$ go install golang.org/x/tools/cmd/present
+```
+
+In the intro-to-go-workshop folder, run
+```
+/path/to/go/bin/present
+```
 
 ## Speed Tour
 
